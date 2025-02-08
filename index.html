@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamidur Rahman</title>
+        <link rel="shortcut icon" type="image/x-icon" href="picture/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet">
+        <!-- font-family: "Permanent Marker", cursive; -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
+            rel="stylesheet">
+        <!-- font-family: "Edu AU VIC WA NT Guides", cursive; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <!-- font-family: "Kalam", cursive; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+            rel="stylesheet">
+        <!-- font-family: "Shadows Into Light", cursive; -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+            rel="stylesheet">
+            <!-- font-family: "Protest Guerrilla", sans-serif; -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+            <!-- font-family: "Merienda", cursive; -->
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e8e2db;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        nav {
+            width: 100%;
+            background: #efe4dc;
+            display: flex;
+            align-items: center; 
+            padding: 5px;
+            position: fixed;
+            z-index: 100;
+        }
+
+
+        nav img {
+            width: 10%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            justify-content: center;
+            gap: 90px;
+            font-family: "Merienda", cursive;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav ul li {
+            position: relative;
+            list-style: none;
+            color: #000;
+        }
+        
+        nav ul li::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #717171;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        nav ul li:hover::after {
+            width: 100%;
+        }
+        
+
+        .top {
+            position: relative;
+        }
+
+        .top img {
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .top-content{
+            display: flex;
+            flex-direction: column;
+            color: #ffff;
+        }
+        .top-content h1{
+            font-family: "Permanent Marker", cursive;
+            margin-bottom: 30px;
+        }
+        .top-content p{
+            font-family: "Edu AU VIC WA NT Guides", cursive;
+        }
+        .top-left{
+        
+            position: absolute;
+            top:20%;
+            left: 2%;
+        }
+        .top-right{
+            position: absolute;
+            top: 20%;
+            left: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;   
+            background: #693f3f51;
+            padding-bottom: 70px;
+            padding-left: 20px;
+            padding-right: 5px;
+            border-radius: 10% 30% 50% 70%;
+        }
+        .top-right span {
+            display: block;
+            font-family: "Protest Guerrilla", sans-serif; 
+            font-size: 18pt; 
+            font-style: italic;  
+            text-align: center;        
+            
+            
+        }
+        .top-right h1{
+            text-align: center;
+            
+        }
+        .top-content button{
+            background-color: rgb(170, 255, 0);
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid rgb(255, 255, 0);
+            color: #efe4dc;
+        }
+        .mid{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+
+        }
+        .mid1,.mid2,.mid3 h1{
+            font-family: "Kalam", cursive;
+            font-size: 2em;
+        }
+        .mid1,.mid2,.mid3 h3{
+            font-family: "Shadows Into Light", cursive;
+            font-size: 1.5em;
+            
+        }
+        .mid1,.mid2,.mid3 p {
+            font-family: "Shadows Into Light", cursive;
+            font-size: 1.5em;
+
+        }
+        .mid3{
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .skill{
+            padding: 10px;
+            display: flex; 
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .skill span{
+            box-sizing: border-box;
+            
+            border: 1px solid #d1f9ce;
+            padding: 10px;
+            justify-content: space-around;
+            text-align: center;
+            background-color: #eff4e8;
+            box-shadow: 10px 5px 5px rgb(187, 189, 151);
+        }
+        .skill span:hover{
+            scale: 1.1;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: wrap;
+        }
+        .container {
+            width: 30%; 
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            margin: 20px;
+            position: relative;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .image-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+            z-index: 2;
+        }
+
+        .container:hover .text {
+            transform: translateY(0);
+        }
+        .text p {
+            margin: 0;
+            color: #666;
+            font-size: 1.1em;
+        }
+        .gallery span{
+            display: block;
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            background: #52715076;
+            margin-top: 5px;
+            max-width: 110px;
+            text-align: center;
+            border-radius: 50% 20% / 10% 40%;
+        }
+
+        .gallery span a{
+            
+            color: #ffffff;
+        }
+        .top-left span{
+            display: block;
+            box-sizing: border-box;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background: #3efa57;
+            margin-top: 20px;
+            max-width: 100px;
+            text-align: center;
+        }
+        .top-left span a{
+            color: #ffffff;
+        }
+
+
+
+
+
+
+
+
+
+        
+        footer{
+            display: flex;
+            padding: 20px;
+            background-color: rgb(9, 9, 9);
+            justify-content: center;
+            gap: 20px;
+        }
+        footer span a{
+            color: #515150;
+            padding-left: 20px;
+        }
+        @media (max-width: 768px) {
+            *{margin: 0;
+            padding: 0;
+            }
+            .nav{
+                display: inline-block;
+                
+                
+            }
+
+            .top{
+                width: 100%;
+                justify-content: center;
+                overflow: hidden;
+            }
+            .top img{
+                position: relative;
+                width: 200%;
+                left: -50%;
+                overflow: hidden;
+            }
+            .top-left{
+                position: relative;
+                background: #b0aeae;
+                padding: 20px;
+
+
+
+            }
+            .top-left h1{
+                text-align: center;
+            }
+            .top-left p{
+                font-family: "Permanent Marker", cursive;
+                text-align: center;
+            }
+            .top-left button{
+                display: none;
+            }
+            .top-right{
+                display: none;
+            }
+            .container{
+                width: 100%;
+            }
+
+
+
+
+            footer{
+                display: block;
+                justify-content:left;
+                padding: 20px;
+                line-height: 30px;
+                
+                
+
+            }
+            footer span{
+                padding-left: 20px;
+            }
+            .half{
+                justify-content: center;
+                text-align: center;
+            }
+            .other-half{
+                text-align: center;
+            }
+
+
+        }
+
+        
+
+    </style>
+    </head>
+    <body>
+
+        <section class="nav">
+            <nav>
+                <img src="/logo.png" alt="logo error">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#social">Social</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <header>
+            <section class="top" id="home">
+                <img src="/Screenshot 2024-10-12 160132.jpg" alt="404">
+                <div class="top-content">
+                    <div class="top-left">
+                        <h1>Aspiring Software Engineer</h1>
+                        <p>I'm a student currently pursuing a diploma in
+                            Engineering, specializing in Computer Science and
+                            <br> Technology at Munshiganj Polytechnic Institute.
+                            I have a deep passion for writing and watching <br>
+                            anime, both of which serve as creative outlets
+                            and sources of inspiration. As an introvert, I value
+                            <br>
+                            solitude, using it as an opportunity for
+                            personal reflection and growth. My future plan is
+                            <br>
+                            to
+                            become a software developer, where I aim to
+                            apply my technical skills and creativity <br> to
+                            build
+                            innovative solutions in the field of
+                            technology. This ambition drives me to
+                            <br>constantly
+                            enhance my programming knowledge and stay
+                            updated with the latest <br> advancements in
+                            software
+                            development. </p>
+                        <span><a href="https://en.wikipedia.org/wiki/Software_engineering" target="_blank">Learn More</a></span>
+                    </div>
+                    <div class="top-right">
+                        <h1>About Me</h1>
+                        <span>Aims to become a software developer.</span>
+                        <span>Introverted and values personal space.</span>
+                        <span>Enjoys writing and watching anime.</span>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section id="education">
+                <div class="mid3">
+                    <h1>
+                        Education
+                    </h1>
+                </div>
+                <div class="gallery">
+                    <div class="container">
+                        <div class="image-container">
+                            <img src="/mupi (3).jpg" alt="Image 1">
+                        </div>
+                        <div class="text">
+                            <p><b>Munshiganj Polytechnic Institute</b><br>
+                                I am presently enrolled at Munshiganj Polytechnic Institute, pursuing a diploma in Computer Science and Technology for the 2023-2024 academic session. With a deep passion for technology and problem-solving, my ultimate objective is to become a proficient software engineer. I am committed to acquiring the necessary skills and expertise to contribute meaningfully to the software industry and drive innovation.
+                                <br>
+                            <span><a href="https://munshiganj.polytech.gov.bd/" target="_blank"> Learn More</a></span></p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="image-container">
+                            <img src="/sam (2).jpg" alt="Image 2">
+                        </div>
+                        <div class="text">
+                            <p><b>Shamganj High School</b><br>
+                                I completed my SSC exam at Shamganj High School in Kalibari Bajar, Madargonj, Jamalpur. In 2022, I achieved a commendable GPA of 4.61 in the science group.The school’s proximity to my home facilitated a focused and enriching learning experience, laying a solid foundation for my academic and personal growth. <br>
+                            <span><a href="https://web.facebook.com/shamganjhighschool" target="_blank">Learn More </a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="image-container">
+                            <img src="/mujata(2).jpg" alt="Image 3">
+                        </div>
+                        <div class="text">
+                            <p><b>Mujata Govt. Primary School</b><br>
+                                I complited my primary education in Mujata Govt. Primary School in Madargonj,Jamalpur.I completed my primary education in 2017, graduating with a GPA of 5.00. The school holds a special place in my heart as it was not only close to home but also where I laid the foundation of my academic journey. <br>
+                             <span><a href="https://web.facebook.com/mujatagps" target="_blank">Learn More</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="mid" id="skill">
+                <div class="mid3">
+                    <h1>
+                        Skills
+                    </h1>
+                    <div class="skill">
+                        <span><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></span>
+                        <span><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></span>
+                        <span><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a></span>
+                        <span><a href="https://en.wikipedia.org/wiki/Microsoft_Office" target="_blank">MS Office</a></span>
+                        <span><a href="https://en.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">Adobe Photoshop</a></span>
+                        <span><a href="https://en.wikipedia.org/wiki/Poetry#:~:text=Poetry%20(from%20the%20Greek%20word,is%20written%20by%20a%20poet." target="_blank">Poetry</a></span>
+
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer id="social">
+            <div class="half">
+                <span><a href="https://www.facebook.com/750008646764s" target="_blank">Facebook</a></span>
+            <span><a  href="https://x.com/hamidur_shohan" target="_blank">X</a></span>
+            <span><a href="https://www.instagram.com/hamidur_shohan" target="_blank">Instragram</a></span>
+            <span><a href="https://github.com/hamidur-shohan" target="_blank">GitHub</a></span>
+            </div>
+            <div class="other-half">
+                <span><a href="https://www.linkedin.com/in/hamidur-shohan/" target="_blank">LinkedIn</a></span>
+            <span><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXJSwwvGkDXJPpkxlgqjCTmtKqglgNtShjgQGBBBtGCGMBHDsNPHSSqZNHXsmJdCChLrR" target="_blank">Gmail</a></span>
+            <span><a href="https://discord.com/channels/@hamidur_shohan" target="_blank">Discode</a></span>
+            </div>
+        </footer>
+
+    </body>
+</html>
