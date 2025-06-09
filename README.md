@@ -5,7 +5,7 @@ A simple HTML and CSS website hosted on GitHub Pages.
 ## 🚀 Live Demo
 
 Check out the live site here:  
-👉 [Website/](https://hamidur0x.github.io/website2/)
+👉 [Website](https://hamidur0x.github.io/website2/)
 
 ## 💻 How to Run Locally
 
